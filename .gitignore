@@ -1,0 +1,43 @@
+# DAY RUINER prototype — never commit or distribute these.
+
+# Build outputs
+build/
+out/
+cmake-build-*/
+
+# Vendored JUCE 9.0.3 clone (see BUILD_WINDOWS.md; CI clones it fresh)
+_juce93/
+
+# Built plugin binaries
+*.vst3
+*.component
+*.lv2
+*.vst
+
+# CMake artifacts
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.ninja
+.ninja_deps
+.ninja_log
+
+# IDE / editor files
+.vs/
+.idea/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.xcworkspace/
+xcuserdata/
+*.code-workspace
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Smoke-test render output
+smoke_output.wav
